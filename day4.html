@@ -1,0 +1,43 @@
+<!--PAYMENT FORM-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <h3>Required details are represented by * </h3>
+    <h2>User information</h2>
+    <form action="">
+        <p>Name:* <input type="text" name="Uname" id="Uname" required></p>
+        <!-- NAME SHOULD BE ALWAYS UNIQUE BUT FOR THINGS IN SAME GROUP IT SHOULD BE SAME-->
+        <fieldset>
+            <legend>Gender*</legend>
+        <p>Male <input type="radio" name="Gender" id="Male" required></p>
+        <p>Female <input type="radio" name="Gender" id="Female" required></p>
+        </fieldset>
+        <p>Age:* <input type="number" name="age" id="age" required></p>
+        <p>Address <textarea name="address" id="address" cols="100" rows="20"></textarea></p>
+        <p>Email* <input type="email" name="email" id="email" required></p>
+        <p>Pincode* <input type="number" name="pincode" id="pincode" required></p>
+        <hr>
+        <h2>Card information</h2>
+        <p>Card type:*
+            <select required>
+                <option value="">--SELECT YOUR CARD TYPE--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Master card" >Master card</option>
+                <option value="Credit card">Credit card</option>
+            </select>
+        </p>
+        <P>Card_number:* <input type="number" name="card_num" id="card_num" required></P>
+        <p>Exp date:* <input type="date" name="exp_date" id="exp_date" required></p>
+        <p>Cvv:*<input type="password" name="cvv" id="cvv" required></p>
+        <p> <input type="submit" value="Pay"></p>
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
