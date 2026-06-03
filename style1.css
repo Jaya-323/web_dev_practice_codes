@@ -1,0 +1,71 @@
+h3{
+    color: darkgoldenrod;
+}
+
+/*Element selector*/
+p{
+    color: blueviolet;
+}
+a{
+    color: coral;
+}
+li{
+    list-style-type:square ;
+}
+/*class selector*/
+.selector{
+    color: chocolate;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+/*For selecting a class of particular element with same name*/
+span.selector{
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+}
+/* descendant combinators*/
+li em{
+    color:violet;
+}
+/*Adjacent combinator*/
+/*It gets us the element next to our selected element*/
+h6+p{
+    font-size: larger;
+}
+/*Pseudo class selector*/
+a:hover{
+    color: darkgreen;
+}
+body h6+p .selector{
+    color: aliceblue;
+    background-color:black ;
+}
+/*Id selector*/
+#Idselect{
+    color: red;
+    font-size: larger;
+}
+p#Idselect{
+    color: green;
+    font-size: larger;
+}
+/*Attribute selector*/
+li[class]{
+    color:pink;
+}
+li[class="a"]{
+    color: cyan;
+    font-size: larger;
+}
+/*All classes that contains a*/
+li[class~="a"]{
+   background-color: blue;
+    font-size: larger;
+}
+/*Universal selector*/
+*{
+    background-color: cyan;
+   
+}
