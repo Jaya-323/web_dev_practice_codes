@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table styling</title>
+    <style>
+        th,tr,td{
+            border:2px solid black;
+            border-collapse: collapse;
+            padding:10px;
+            border-spacing: 10px;
+            
+        }
+        th{
+            color:rgb(72, 35, 2);
+            background-color: cornsilk;
+        }
+        td{
+            background-color:rgb(13, 188, 182);
+        }
+    </style>
+</head>
+<body>
+    <h2>Table</h2>
+    <table >
+        <thead>
+            <th>Subject</th>
+            <th>Marks</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maths</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>85</td>
+            </tr>
+
+        </tbody>
+     <tfoot>
+        <th colspan="2">Total Marks: 270</th>
+        <tr colspan="2">
+            <td colspan="2">Percentage: 90%</td>
+        </tr>
+     </tfoot>
+</body>
+</html>
