@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Specificity</title>
+    <style>
+        .Favourite{ /*If we use selector like ul#Books li.Favourite then this selector specificity will increase so this one will be applied */
+            color: aquamarine;
+         }
+         ul#Books li{  /*This one has more specificity that's why rather than favourite class selector this selector properties got applied */
+            color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+
+         }/*If we use link on upper side its specificity will be less so the styles written on last will be applied as it has more specificity*/
+    </style>
+     <link rel="stylesheet" href="sp.css">
+</head>
+<body>
+    <!--If same specificity selector are written more than oone time the properties of the selector written on last will be applied -->
+    <ul id="Books">
+        <li>Harry potter</li>
+        <li class="Favourite">Sherlock holmes</li><!--If we write style properties here the properties written here will have maximum specificity among them so that property will be applied -->
+        <li>Dr. Elise</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <style>
+        body{
+            color: blue;
+        }
+       .class1 a{
+        color:inherit;
+       }
+       .class2 a{
+        color:initial;
+       }
+       .class3 a{
+        color:unset;/*In unset if the property we are using have yes in inheritance then the selector will give the inherited value from parent to child element but if inherited is no then it will give the initial value to it */
+       }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Default <a href="#">Link 1</a></li>
+        <li class="class1">Inherit <a href="#">Link 1</a></li>
+        <li class="class2">Initial <a href="#">Link 2</a></li>
+        <li class="class3">unset <a href="#">Link 3</a></li>
+    </ul>
+</body>
+</html>
