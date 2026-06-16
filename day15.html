@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        p{
+            border:2px solid black;
+            width:100px;
+            height:30px;
+            overflow: hidden;
+        }
+        #overflow{
+            border:2px solid black;
+            width:100px;
+            height:100px;
+            overflow: scroll;
+        }
+        .overflow{
+            border:2px solid black;
+            width:500px;
+            height:100px;
+            overflow: auto;
+        }
+        .scroll{
+            border:2px solid black;
+            width:500px;
+            height:100px;
+            overflow: scroll;
+        }
+       
+    </style>
+</head>
+<body>
+    <p>This is a paragraph showing overflow condition. </p>
+    <p id="overflow">Overflow in text can be controlled using many method some of them include hidden , scroll , auto , visible . Auto and scroll are same just the difference is that when we use scroll even if there is no overflow it will scroll the content which do not occur in auto.</p>
+    <p class="overflow">Overflow in text can be controlled using many method some of them include hidden , scroll , auto , visible . Auto and scroll are same just the difference is that when we use scroll even if there is no overflow it will scroll the content which do not occur in auto.</p>
+    <h3 class="scroll">Overflow in text can be controlled using many method some of them include hidden , scroll , auto , visible . Auto and scroll are same just the difference is that when we use scroll even if there is no overflow it will scroll the content which do not occur in auto.</h3>
+</body>
+</html>
