@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image overflow</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            border:2px solid black;
+            margin:5px;
+        }
+        .box1{
+            height: 300px;
+            width: 300px;
+            border:2px solid black;
+            margin:5px;
+        }
+        .box2{
+            height: 300px;
+            width: 300px;
+            border:2px solid black;
+            margin:5px;
+        }
+        .box3{
+            height: 300px;
+            width: 300px;
+            border:2px solid black;
+            margin:5px;
+        }
+        .box img{
+            height:100%;
+            width:100%;
+            object-fit: contain;
+        }
+        .box1 img{
+            height:100%;
+            width:100%;
+            object-fit: cover;
+        }
+        .box2 img{
+            height:100%;
+            width:100%;
+            object-fit: fill;
+        }
+        .box3 img{
+            height:100%;
+            width:100%;
+            object-fit: scale-down;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">>
+        <div class="box"><img src="car.webp" alt="car"></div>
+        <div class="box"><img src="Contemporary-Round-Bed.webp" alt="car"></div>
+        <div class="box"><img src="images.jpg" alt="car"></div>
+        <div class="box1"><img src="car.webp" alt="car"></div>
+        <div class="box2"><img src="Contemporary-Round-Bed.webp" alt="car"></div>
+        <div class="box3"><img src="images.jpg" alt="car"></div>
+        </div>
+
+</body>
+</html>

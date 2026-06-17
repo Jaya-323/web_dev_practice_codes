@@ -1,0 +1,58 @@
+<!--PAYMENT FORM-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1 class="heading">Payment Form</h1>
+    <hr>
+    <h3>Required details are represented by * </h3>
+    <h2>User information</h2>
+    <form action="">
+        <p>Name:* <br><input type="text" name="Uname" id="Uname" required placeholder="jm"></p>
+        <!-- NAME SHOULD BE ALWAYS UNIQUE BUT FOR THINGS IN SAME GROUP IT SHOULD BE SAME-->
+        <fieldset>
+            <legend>Gender*</legend>
+        <p>Male <input type="radio" name="Gender" id="Male" required></p>
+        <p>Female <input type="radio" name="Gender" id="Female" required></p>
+        </fieldset>
+        <p>Age:* <br><input type="number" name="age" id="age" required></p>
+        <p>Address<br> <textarea name="address" id="address" cols="100" rows="20"></textarea></p>
+        <p>Email* <br><input type="email" name="email" id="email" required></p>
+        <p>Pincode*<br> <input type="number" name="pincode" id="pincode" required></p>
+        <hr>
+        <h2>Card information</h2>
+        <div class="card">
+        <p>Card type:*
+            <br><br><img src="resource/cred.jpg" alt="ccard">
+            <img src="resource/debit card.jpg" alt="visa">
+            <img src="resource/visa.jpg" alt="debitcard">
+            <br>
+            <select required>
+                <option value="">--SELECT YOUR CARD TYPE--</option>
+                <option value="Visa">Visa</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Master card" >Master card</option>
+                <option value="Credit card">Credit card</option>
+            </select>
+        </p>
+        </div>
+        <P>Card_number:* 
+            <br>
+            <input type="number" name="card_num" id="card_num" required placeholder="1111-2222-3333-4444"></P>
+        <p>Exp date:* 
+            <br><input type="date" name="exp_date" id="exp_date" required></p>
+        <p>Cvv:*
+            <br><input type="password" name="cvv" id="cvv" required placeholder="123"></p>
+        <p> <input type="submit" value="Pay"></p>
+        <input type="reset" value="Reset">
+    </form>
+    </div>
+</body>
+</html>
