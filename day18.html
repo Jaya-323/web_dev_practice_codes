@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        h1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            background-color: #3d5a80;
+            border:1px solid rgb(26, 149, 226) ;
+            border-spacing:5px;
+            text-decoration: solid;
+            text-shadow: 1px 3px 1px gray;
+        }
+        body{
+           background-color:#98c1d9;
+        }
+        .imp{
+            color: rgb(205, 69, 15);
+        }
+        .contact{
+            background-color:#e0fbfc;
+           border:1px solid  rgba(238, 241, 196, 0.715);
+            margin: 20px;
+            padding: 20px;
+            width:92%;
+            height:90%;
+            border-radius:3px;
+        }
+        .fname,.lname,.ph,.mail,.msg{
+            margin: 2px ;
+            padding: 10px;
+            color:#293241;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        textarea{
+            height:100px;
+            width:200px;
+            padding:5px;
+            margin:9px;
+            overflow:scroll;
+        }
+        input[type="submit"]{
+            background-color: rgb(10, 186, 42);
+            background-position:5px;
+            border-radius: 2px;
+            margin: 2px;
+            padding:5px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contact">
+    <h1>Contact us</h1>
+    <hr>
+    <p class="imp">Please fill in the mandatory info shown by *</p>
+     <form action="">
+     <p class="fname">FirstName*:<input type="text" name="fname" id="name" placeholder="First_name" required></p>
+     <p class="lname">LastName: <input type="text" name="lname" id="lname" placeholder="Last_name"></p>
+     <p class="ph">Phone number*: <input type="number" name="phnum" id="phnum" placeholder="11-22-33-44-55" required></p>
+     <p class="mail">Email *: <input type="email" name="mail" id="mail" placeholder="abc123@gmail.com" required></p>
+     <p class="msg">Message: </p>
+     <textarea name="msg" id="msg" placeholder="Write your query here"></textarea>
+     <br><input type="submit" value="submit">
+
+
+
+
+     </form>
+     </div>
+</body>
+</html>
