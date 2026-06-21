@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .layer1{
+            z-index:3;
+            position: absolute;
+            top:8px;
+            left:8px;
+            height: 250px;
+            width: 120px;
+           background-color: aquamarine;
+           border:1px solid blue;
+           padding:5px
+        }
+         .layer2{
+            z-index: 2;
+            position: absolute;
+            top:25px;
+            left:25px;
+            height: 250px;
+            width: 120px;
+           background-color: rgb(255, 225, 127);
+           border:1px solid rgb(255, 106, 0);
+           padding:5px
+        }
+         .layer3{
+            z-index: 1;
+            position: absolute;
+            top:40px;
+            left:40px;
+            height: 300px;
+            width: 160px;
+           background-color: rgb(187, 127, 255);
+           border:1px solid rgb(255, 0, 230);
+           padding:5px
+        }
+    </style>
+</head>
+<body>
+    <div class="layer1">
+        <h1>Scripting language</h1>
+    </div>
+    <div class="layer2">
+        <h1>Programming language</h1>
+    </div>
+    <div class="layer3">
+        <h1>Framework</h1>
+    </div>
+    
+    
+    
+</body>
+</html>
