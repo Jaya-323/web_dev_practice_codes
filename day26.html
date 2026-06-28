@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float property challenge</title>
+    <style>
+        .web{
+            border:1px solid purple;
+            background-color:purple;
+            margin:10px;
+            padding: 5px;
+            border-radius: 5px;
+            height:200px;
+            width: 90%;
+         
+            
+        }
+         .app{
+            border:1px solid rgb(0, 105, 128);
+            background-color:rgb(0, 81, 128);
+            margin:10px;
+            padding: 5px;
+            border-radius: 5px;
+             height:200px;
+            width: 90%;
+            
+        }
+         .game{
+            border:1px solid rgb(128, 0, 68);
+            background-color:rgb(128, 0, 77);
+            margin:10px;
+            padding: 5px;
+            border-radius: 5px;
+             height:200px;
+            width: 90%;
+            
+        }
+         .ai{
+            border:1px solid rgb(228, 216, 47);
+            background-color:rgb(232, 214, 20);
+            margin:10px;
+            padding: 5px;
+            border-radius: 5px;
+             height:200px;
+            width: 90%;
+        }
+        img{
+            height:150px;
+            width:150px;
+            border-radius: 5px;
+            padding: 5px;
+        
+        }
+        .webpage{
+            float:right;
+            height: 150px;
+            width: 150px;
+            position:relative;
+            bottom: 10px;
+        }
+        .phone{
+            float:left;
+            height: 150px;
+            width: 150px;
+            position:relative;
+            top:5px;
+        }
+        .gamedev{
+            float:right;
+            height: 150px;
+            width: 150px;
+            position:relative;
+            top: 5px;
+        }
+        .ai-ml{
+            float:left;
+            height: 150px;
+            width: 150px;
+            position:relative;
+            top: 5px;
+
+        }
+        .web-p{
+            color:white;
+            text-shadow: 1px 2px 1px black;
+            font-size: 1.2em;
+            
+        }
+        .app-p{
+            color:white;
+            text-shadow: 1px 2px 1px black;
+            font-size: 1.2em;
+            text-align: left;
+        }
+        .game-p{
+            color:white;
+            text-shadow: 1px 2px 1px black;
+            font-size: 1.2em;
+            text-align: center;
+            
+        }
+        .ai-p{
+            color:black;
+            text-shadow: 1px 2px 1px rgb(255, 255, 255);
+            font-size: 1.2em;
+            text-align: left;
+            
+        }
+        @media screen and (max-width:400px) and (min-width:50) {
+            p{
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="web">
+       
+        <p class="web-p">
+             <img src="resource/web.jpg" alt="webpage" class="webpage">
+        Web development is the process of building, creating, and maintaining websites and web applications that run over the internet. It covers everything from plain-text static pages to complex social network applications and electronic businesses. While Wikipedia defines web development primarily as the coding and programming aspect, the broader ecosystem includes network security configuration, web design, and database management.The discipline is generally divided into three main areas:Front-End Development: Often called the "client-side," this involves building everything users directly see and interact with, such as buttons, navigation menus, and page layouts. It primarily relies on three core technologies: HTML (for structure), CSS (for visual styling), and JavaScript (for interactivity). Developers also use frameworks like React or Angular to build complex, responsive user interfaces.Back-End Development: Known as the "server-side," this operates behind the scenes to power application logic, database management, and server communication. 
+    </p></div>
+    <div class="app">
+        <img src="resource/app.jpg" alt="app" class="phone">
+        <p class="app-p">App development is the process of planning, designing, coding, and testing software applications. It bridges the gap between a business need or creative idea and a functional product that users can access on smartphones, tablets, or computersThe development lifecycle typically follows seven key phases, beginning with ideation and planning to define the target audience and core features. Next, UI/UX designers create wireframes and interactive prototypes for visual reality, which developers then bring to life by coding the front end (what the user sees) and back end (the databases and server logic).Following development, rigorous testing is conducted to ensure flawless performance across various devices and network conditions before the software is deployed to app stores. Finally, continuous maintenance and updates are required to fix bugs, optimize security, and adapt to new operating system versions.</p>
+    </div>
+    <div class="game">
+        <img src="resource/game.jpg" alt="gamepage" class="gamedev">
+        <p class="game-p">Game development is the multidisciplinary process of designing, programming, and releasing a video game. It combines coding, visual art, and storytelling, and involves distinct stages: pre-production (documenting ideas), production (building the game), testing for bugs, and post-launch updates.Pre-Production: This stage focuses on brainstorming the core concept, defining the genre, and drafting a Game Design Document (GDD). The team outlines the rules, art style, story, and budget before writing any major code.Production: This is the most intensive phase. Programmers write the underlying code to build game mechanics and logic, while artists and sound designers create the visual assets, character models, and audio. Developers often utilize game engines like Unity or Unreal Engine to streamline graphics and physics.Post-Production (Testing and Launch): Once the game is playable, Quality Assurance (QA) testers hunt for bugs and glitches. After the game is launched, developers continue to support it by releasing patches, updates, and new content based on player feedback.
+            </p>
+        </div>
+    <div class="ai">
+        <img src="resource/ai.jpg" alt="ai_ml" class="ai-ml">
+        <p class="ai-p">
+            Artificial Intelligence (AI) is the broad science of mimicking human capabilities—like reasoning, learning, and decision-making—through machines. Machine Learning (ML) is a subset of AI focused on algorithms that learn patterns from data to make predictions or decisions without being explicitly programmed.AI is the overarching umbrella that covers any computer software that engages in human-like activity. Machine Learning is a specific method to achieve AI. Instead of giving a computer a rigid set of rules or hard-coded instructions, you feed an ML model vast amounts of data, allowing it to learn and improve autonomously over time.
+        </p>
+    </div>
+</body>
+</html>

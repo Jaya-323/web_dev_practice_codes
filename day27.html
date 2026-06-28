@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position property(challenge)</title>
+    <style>
+        .container{
+            background-image:url("resource/space\ background.jpg");
+              background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border:1px solid black;
+            height:100%;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .intro{
+            background-image:url("resource/space.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 1px solid black;
+            box-sizing: border-box;
+          
+            height:100%;
+            width:100%;
+            object-fit: contain;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+
+            color:aliceblue;
+            text-shadow: 1px 2px 1px rgb(16, 15, 15);
+            text-align: center;
+        }
+        nav{
+            border: 1px solid black;
+            padding:3px;
+            height:20%;
+            width:99%;
+            margin:5px;
+            position: sticky;
+            top:0px;
+            background-color: rgb(55, 245, 245);
+        }
+        a{
+            text-decoration: none;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: bold;
+            color:indigo;
+            text-shadow:1px 2px 3px indianred;
+            
+        }
+        .throughput{
+            padding: 15px;
+            margin: 10px;
+        }
+        .latency{
+            padding: 15px;
+            margin: 10px;
+        }
+        .jitter{
+            padding: 15px;
+            margin: 10px;
+        }
+        .congestion{
+            padding: 15px;
+            margin: 10px;
+        }
+        .risk{
+            padding: 15px;
+            margin: 10px;
+        }
+        .packet_loss{
+            padding: 15px;
+            margin: 10px;
+        }
+       h2{
+        color:lightpink;
+        padding:5px;
+        margin:10px;
+       }
+       p{
+        color:white;
+        padding:5px;
+        margin:10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 20px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="intro"><h1>Network Prediction AI Copilot</h1>
+    </div>
+    <nav>
+        <a href="#" class="throughput">Throughput</a>
+        <a href="#" class ="latency">Latency</a>
+        <a href="#" class="jitter">Jitter</a>
+        <a href="#" class="risk">Risk</a>
+        <a href="#" class="congestion">Congestion</a>
+        <a href="#" class="packet_loss">Packet Loss</a></nav>
+        <section id="throughput">
+            <h2>Throughput</h2>
+  <p >
+Throughput is the rate at which a system, machine, or organization processes, produces, or delivers a given amount of work, goods, or data within a specific period of time. It measures overall efficiency and capacity, representing the actual output rather than the theoretical maximum potential.
+</p>
+</section>
+<section id="latency">
+    <h2>Latency</h2>
+    <p>
+        Latency is the time delay between a user's action and an application's response. It measures how long it takes for a data packet to travel from its origin to its destination and back. Ideally, latency should be as close to zero as possible to prevent sluggishness or lag.
+    </p>
+</section>
+<section id="jitter">
+    <h2>Jitter</h2>
+    <p>
+        In networking, jitter is the variation in the time delay between when data packets are transmitted and received, measuring the inconsistency of your connection over time. While total speed dictates how much data travels, jitter determines the smoothness of real-time applications like video calls and online gaming.
+    </p>
+</section>
+<section id="risk">
+    <h2>Risk analysis</h2>
+    <p>
+        Effective risk management in network speed balances performance and security by identifying potential vulnerabilities—such as bandwidth bottlenecks and DDoS attacks—and deploying mitigation strategies to ensure data flows reliably and safely.Understanding and mitigating threats ensures high-speed connectivity remains stable and resilient.
+    </p>
+</section>
+<section id="congestion">
+    <h2>Congestion</h2>
+    <p>
+        Network congestion occurs when the volume of data traveling across a network exceeds its maximum available bandwidth, acting as a digital bottleneck. Similar to highway traffic jams, this overload forces data packets to queue in router buffers, leading to increased latency, jitter, packet loss, and significantly slower transmission speeds.
+    </p>
+</section>
+<section id="packet_loss">
+    <h2>Packet Loss</h2>
+    <p>
+        Packet loss degrades your internet performance by forcing dropped data chunks to be repeatedly retransmitted, which spikes your latency and severely lowers your actual data throughput. Even on a high-speed connection, missing data will cause sluggish web pages, video buffering, and choppy voice calls.
+    </p>
+</section>
+    </div>
+</body>
+</html>
