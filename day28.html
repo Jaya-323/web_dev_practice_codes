@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        body{
+            background-color: azure;
+            padding:0px 1px 0px;
+
+        }
+        .container{
+          
+            border:2px solid black;
+            display:flex;
+            width:100%;
+            height:500px;
+            flex-direction: row;/*row,row-reverse , column , column-reverse*/
+            /*justify-content - flex-end , flex-start , center , baseline*/
+           /* flex-wrap:wrap;/*no-wrap , wrap , wrap-reverse */
+            /*align-content:center;/*stretch , space-between , space-around , flex-end , flex-start*/
+            align-items:baseline;/*baseline , flex-end , flex-start, center*/
+            flex-flow:row wrap;/*flex-direction , flex-wrap, this can be only used in container*/
+             
+        }
+        
+        .item{
+            height:75px;
+            width:75px;
+            border:1px solid royalblue;
+        }
+        #item1{
+            background-color: aqua;
+            flex-basis:200px;/*Maximum size can be 200px here*/
+            flex-grow:2;
+            align-self:center;/*flex-start , flex-end , center , baseline , stretch*/
+        }
+        #item2{
+            background-color: rgb(255, 136, 0);
+            flex-shrink:2;/*flex shrink do not work if flex wrap is there*/
+        }
+        #item3{
+            background-color: rgb(51, 255, 0);
+            order: 1;/*order: 0 , 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10*/
+        }
+        #item4{
+            background-color: rgb(229, 255, 0);
+            order:2;
+            flex:3 5 250px;/*flex-grow , flex-shrink , flex-basis this property can only be used in items*/
+        }
+        #item5{
+            background-color: rgb(255, 0, 119);
+        }
+        #item6{
+            background-color: rgb(93, 0, 255);
+        }
+        #item7{
+            background-color: rgb(255, 0, 64);
+        }
+        #item8{
+            background-color: rgb(0, 255, 217);
+        }
+        #item9{
+            background-color: rgb(153, 255, 0);
+        }
+        #item10{
+            background-color: rgb(192, 151, 221);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">1</div>
+        <div class="item" id="item2">2</div>
+        <div class="item" id="item3">3</div>
+        <div class="item" id="item4">4</div>
+        <div class="item" id="item5">5</div>
+        <div class="item" id="item6">6</div>
+        <div class="item" id="item7">7</div>
+        <div class="item" id="item8">8</div>
+        <div class="item" id="item9">9</div>
+        <div class="item" id="item10">10</div>
+    </div>
+</body>
+</html>
