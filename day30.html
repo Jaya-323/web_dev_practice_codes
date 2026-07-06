@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_box challenge2</title>
+    <style>
+        body{
+          background-color: #f1f5f9;;
+}
+        
+        .container{
+           display:flex;
+           justify-content: center;
+            
+             background-color:white;
+        }
+        .ai_tools{
+            height:100%;
+            width:80%;
+            border: 1px solid rgb(74, 70, 71);
+            border-radius:3px;
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+             background-color: #e2e8f0;
+        }
+        .chatgpt,.perplexity,.claude,.synthesia,.midjourney,.zapier{
+             height: 450px;
+             width:300px;
+             border:5px solid rgb(215, 206, 206);
+             border-radius: 3px;
+            margin:20px;
+            padding:5px;
+            background-color: #2563eb;
+             color:white;
+        }
+       img{
+        height:200px;
+        width:300px;
+        border:2px solid rgb(215, 206, 206);
+        border-radius: 3px;
+        
+       }
+       .read button{
+         display: block;
+        margin: 20px auto;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-family: Arial, sans-serif;
+        font-style:italic;
+        font-weight: bold;
+        background-color: #edeaa9;
+        font-size: 16px;
+        cursor: pointer;
+       
+       }
+       .read button:hover{
+    background-color: #25ebeb;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="ai_tools">
+        <div class="chatgpt">
+            <img src="resource/chatgpt.jpg" alt="chatgpt">
+            <h2>Chatgpt</h2>
+            <p>A versatile chatbot designed for general-purpose brainstorming, writing, and logic-based tasks.</p>
+            <div class="read">
+                <button>Read more...</button>
+            </div>
+        </div>
+        <div class="perplexity">
+            <img src="resource/perplexity.jpg" alt="">
+            <h2>Perplexity</h2>
+            <p>A powerful AI assistant known for its high-quality writing, document analysis, and coding.</p>
+             <div class="read">
+                <button>Read more...</button>
+            </div>
+        </div>
+        <div class="claude">
+            <img src="resource/claude.jpg" alt="">
+            <h2>Claude</h2>
+            <p> An AI-powered search engine that provides real-time, fact-checked answers with direct citations to sources.</p>
+             <div class="read">
+                <button>Read more...</button>
+            </div>
+        </div>
+        <div class="synthesia">
+            <img src="resource/synthesia.jpg" alt="">
+            <h2>Synthesia</h2>
+            <p>A video generation platform that allows users to create professional business videos featuring lifelike AI avatars from text scripts.</p>
+             <div class="read">
+                <button>Read more...</button>
+            </div>
+        </div>
+        <div class="midjourney">
+            <img src="resource/midjourney.jpg" alt="">
+            <h2>Midjourney</h2>
+            <p>A generative AI tool used to create high-quality, stylized images and artwork based on text prompts.</p>
+             <div class="read">
+                <button>Read more...</button>
+            </div>
+        </div>
+        <div class="zapier">
+            <img src="resource/zapier.png" alt="">
+            <h2>Zapier</h2>
+            <p> An automation and orchestration platform that uses AI agents to connect various apps and automate multi-step workflows.</p>
+             <div class="read">
+                <button>Read more...</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
